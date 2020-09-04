@@ -30,6 +30,9 @@ inputs:
   pr_label:
     description: Pull request labels, comma-separated list (no spaces)
     required: false
+  pr_author:
+    description: Pull request author
+    required: false  
   pr_milestone:
     description: Pull request milestone
     required: false
