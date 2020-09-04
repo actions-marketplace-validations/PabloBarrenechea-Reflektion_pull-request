@@ -57,7 +57,8 @@ fi
 
 
 if [[ ! -z "$INPUT_PR_AUTHOR" ]]; then
-  GITHUB_USER=$INPUT_PR_AUTHOR
+  echo "Changing author"
+  GITHUB_USER="$INPUT_PR_AUTHOR"
 fi
 
 if [[ ! -z "$INPUT_PR_REVIEWER" ]]; then
