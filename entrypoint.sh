@@ -16,6 +16,8 @@ else
   exit 1
 fi
 
+git config --global --add safe.directory /github/workspace
+
 DESTINATION_BRANCH="${INPUT_DESTINATION_BRANCH:-"master"}"
 
 # Github actions no longer auto set the username and GITHUB_TOKEN
